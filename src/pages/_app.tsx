@@ -1,14 +1,19 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-import { Provider } from 'react-redux'
-import type { AppProps } from 'next/app'
+import { ThemeProvider } from '@mui/material/styles';
+import type { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
 
-import store from '../store'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+import theme from 'src/styles/theme';
+import store from '../store';
+
+export default function ({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
+    <ThemeProvider theme={theme}>
+       <Provider store={store}>
+       <Component {...pageProps} />
     </Provider>
+    </ThemeProvider>
   )
 }
