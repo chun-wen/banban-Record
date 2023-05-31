@@ -1,6 +1,5 @@
 import { Breakpoint } from '@mui/material';
 import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
 
 const Layout = ({
     size = 'lg',
@@ -11,7 +10,6 @@ const Layout = ({
 }) => {
   return (
     <>
-      <CssBaseline />
       <Container maxWidth={size}>
         {children}
       </Container>
