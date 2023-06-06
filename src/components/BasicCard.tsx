@@ -1,16 +1,13 @@
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import React from 'react'
 
 const BasicCard = ({
-  title = "",
-  content = "What you will get in this website?"
-}:{
-  title?: JSX.Element | string
-  content? : JSX.Element | string
+  title = '',
+  content = 'What you will get in this website?',
+}: {
+  title?: JSX.Element | string;
+  content?: JSX.Element | string;
 }) => {
   return (
     <Card sx={{ minWidth: 275 }}>
@@ -19,11 +16,11 @@ const BasicCard = ({
           {title}
         </Typography>
         <Typography variant="h4" component="div" align="center">
-         {content}
+          {content}
         </Typography>
       </CardContent>
     </Card>
   );
-}
+};
 
-export default  BasicCard; 
+export default BasicCard;

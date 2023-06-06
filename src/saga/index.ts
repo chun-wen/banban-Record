@@ -4,12 +4,12 @@ import { call, put, takeLatest } from 'redux-saga/effects';
 import { getArticle, updateArticle } from '@/Slice/article';
 
 function* fetchArticle(action: PayloadAction<number>) {
-    try {
-        const user: AxiosResponse<any> = yield call('', action.payload);
-        yield put(updateArticle({} as any))
-    } catch (e) {
-        console.warn(e);
-    }
+  try {
+    const user: AxiosResponse<any> = yield call('', action.payload);
+    yield put(updateArticle({} as any));
+  } catch (e) {
+    console.warn(e);
+  }
 }
 
 /*
@@ -20,5 +20,5 @@ function* fetchArticle(action: PayloadAction<number>) {
   and only the latest one will be run.
 */
 export function* watchMySaga() {
-    yield takeLatest(getArticle.type, fetchArticle)
+  yield takeLatest(getArticle.type, fetchArticle);
 }

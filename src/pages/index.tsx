@@ -1,13 +1,13 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
-import BasicCard from '@/Components/BasicCard'
-import Layout from '@/Components/Layout'
-import Counter from '../features/counter/Counter'
-import styles from '../styles/Home.module.css'
-import Footer from '@/Components/Footer'
-import { Divider } from '@mui/material'
-import Editor from '@/Components/Editor'
+import BasicCard from '@/Components/BasicCard';
+import Layout from '@/Components/Layout';
+import Counter from '../features/counter/Counter';
+import styles from '../styles/Home.module.css';
+import Footer from '@/Components/Footer';
+import { Divider } from '@mui/material';
+import Editor from '@/Components/Editor';
 
 const IndexPage: NextPage = () => {
   return (
@@ -18,15 +18,15 @@ const IndexPage: NextPage = () => {
       </Head>
       <Layout>
         <>
-        <BasicCard/>
-        <Divider />
-        <Editor />
-        <Footer />
-        {/* <Counter /> */}
-          </>
+          <BasicCard />
+          <Divider />
+          <Editor />
+          <Footer />
+          {/* <Counter /> */}
+        </>
       </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
