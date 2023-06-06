@@ -6,7 +6,8 @@
     "start": "next start",
     "type-check": "tsc",
     "test": "jest",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
