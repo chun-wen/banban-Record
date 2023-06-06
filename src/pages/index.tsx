@@ -23,7 +23,7 @@ const IndexPage: NextPage = () => {
         <Editor />
         <Footer />
         {/* <Counter /> */}
-        </>
+          </>
       </Layout>
     </div>
   )

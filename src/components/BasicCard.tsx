@@ -3,9 +3,10 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import React from 'react'
 
 const BasicCard = ({
-  title = "The most Real Interview Record",
+  title = "",
   content = "What you will get in this website?"
 }:{
   title?: JSX.Element | string
