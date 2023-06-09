@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
+import { Divider } from '@mui/material';
 import Head from 'next/head';
-
-import BasicCard from '@/Components/BasicCard';
-import Layout from '@/Components/Layout';
 import Counter from '../features/counter/Counter';
 import styles from '../styles/Home.module.css';
-import Footer from '@/Components/Footer';
-import { Divider } from '@mui/material';
+
+import BasicCard from '@/Components/BasicCard';
 import Editor from '@/Components/Editor';
+import Footer from '@/Components/Footer';
+import Layout from '@/Components/Layout';
 
 const IndexPage: NextPage = () => {
   return (
