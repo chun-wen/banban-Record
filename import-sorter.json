@@ -1,0 +1,23 @@
+{
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+    {
+      "type": "importMember",
+      "regex": "^$",
+      "orderLevel": 10,
+      "disableSort": true
+    },
+    {
+      "regex": "^react",
+      "orderLevel": 10
+    },
+    {
+      "regex": "^@/Components|^@/Hooks|^@/Interface",
+      "orderLevel": 30
+    },
+    {
+      "regex": "^@/Sagas|^@/Slices|^@/Redux",
+      "orderLevel": 40
+    }
+  ]
+}
